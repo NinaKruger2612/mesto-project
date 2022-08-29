@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css" />
+  </head>
+  <body class="main">
+    <header class="header">
+      <img src="images/logo.svg" class="header__logo" alt="Mesto" />
+    </header>
+
+    <main class="content">
+      <section class="profile">
+        <img
+          class="profile__avatar"
+          alt="АватаРочка"
+          src="images/__users/me.jpg"
+        />
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button type="button" class="profile__edit-button"></button>
+          <p class="profile__data">Иследователь океана</p>
+        </div>
+        <button type="button" class="profile__add-button"></button>
+      </section>
+
+      <section class="elements">
+        <ul class="elements__table">
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Работа над меню"
+              src="images/__users/rebota.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Работа не Walk, работа - WORK</h2>
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="VlaDick"
+              src="images/__users/vladislave.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Mr. SladiSlave</h2>
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Спирт"
+              src="images/__users/spirt.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Самогон</h2>
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Куст"
+              src="images/__users/gorox.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">А это микрозелень!!!!</h2>
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Правда жизни"
+              src="images/__users/mem.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Смешной мем</h2>
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Мопсик"
+              src="images/__users/leonard.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Леорнард Буйный</h2>
+
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Я и Чупа-Чупс"
+              src="images/__users/me.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Это я</h2>
+
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Черный Мопсик"
+              src="images/__users/misha.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Мороженко Покушал</h2>
+
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Дедушка"
+              src="images/__users/starost.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Щуканский</h2>
+
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+
+          <li class="element">
+            <img
+              class="element__image"
+              alt="Софочка"
+              src="images/__users/sonya.jpg"
+            />
+            <div class="element__block">
+              <h2 class="element__title">Это я</h2>
+
+              <button type="button" class="element__like-button"></button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2022 Mesto Russia</p>
+    </footer>
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+        <h2 class="popup__title">Редактировать Профиль</h2>
+        <form name="edit-form" action="#" class="form">
+          <input
+            name="username"
+            id="name"
+            placeholder="Имя"
+            minlength="2"
+            maxlength="40"
+            class="form__input"
+            required=""
+          />
+          <input
+            name="hobby"
+            id="hobby"
+            placeholder="Чем занимаетесь???"
+            minlength="2"
+            maxlength="200"
+            class="form__input"
+            required=""
+          />
+          <button type="submit" class="form__submit" disabled="disabled">
+            Сохранить
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

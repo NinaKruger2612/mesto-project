@@ -1,0 +1,24 @@
+.profile__data {
+  margin: 0;
+  padding: 0 0 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .profile__data {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .profile__data {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 0;
+    margin-bottom: 36px;
+    margin-left: 40px;
+  }
+}
